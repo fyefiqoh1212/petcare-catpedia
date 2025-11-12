@@ -1,0 +1,187 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background-image: url("../Images/Store2.jpg");
+   background-repeat: no-repeat;      
+  background-size: contain;        
+  background-position: center center;
+  background-attachment: fixed;     
+  background-color: #fff;        */
+}
+
+body::before {
+  z-index: -1;
+pointer-events: none;
+  content: "";
+  position: fixed;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.25);
+}
+h2 {
+  color: #5a3825;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../Images/Store2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero a.btn-primary {
+  background-color: #c88a5b;
+  border: none;
+}
+
+.hero a.btn-primary:hover {
+  background-color: #b67a4e;
+}
+
+
+.fw-bold, h1 {
+   font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lead {
+  color: #3b1805d2 !important;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+} 
+
+.products {
+  background-color: #f8f3ed;
+}
+
+
+
+.hero {
+  min-height: 100vh;
+  background-image: url("../Images/Store2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero .container,
+.cat-carousel {
+  position: relative;
+  z-index: 2;
+}
+
+
+.cat-carousel {
+  background-color: rgba(255, 245, 235, 0.15); 
+  border: 1px solid rgba(255, 245, 235, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  padding: 25px;
+  width: 85%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cat-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.card {
+  background-color: #fff9f3;  /* putih krem */
+  border: 1px solid #e6d5c3;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 15px rgba(90, 56, 37, 0.2);
+  transform: translateY(-5px);
+}
+
+.img-fluid.rounded-4.shadow-sm {
+  width: 100%;
+  height: 300px;
+
+}
+
+.contact {
+  background-color: #3b2a22 !important; /* coklat tua elegan */
+  color: #f2d7b6; /* teks krem lembut */
+}
+
+.boarding {
+  background-color: #f9f6f3;
+}
+
+.btn-success {
+  background-color: #8cc63f;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #79b232;
+}
+
+.booking form .form-control, 
+.booking form .form-select {
+  border-radius: 12px;
+  border: 1px solid #d8c2a7;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.booking form .form-control:focus,
+.booking form .form-select:focus {
+  border-color: #c88a5b;
+  box-shadow: 0 0 5px rgba(200, 138, 91, 0.4);
+}
+
+.booking .btn-primary {
+  background-color: #c88a5b;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.booking .btn-primary:hover {
+  background-color: #b67a4e;
+  transform: scale(1.05);
+}
